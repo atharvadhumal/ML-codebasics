@@ -16,4 +16,5 @@ us_weather = pd.DataFrame({
 
 us_weather
 
-pd.concat([india_weather, us_weather])
+df = pd.concat([india_weather, us_weather], keys=["index", "us"])
+print(df)
